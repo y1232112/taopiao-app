@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns="http://schemas.android.com/apk/res/android">-->
+<!--    <solid color="@android:color/holo_orange_light"/>-->
+<!--    <corners radius="10dp"/>-->
+<!--    <stroke-->
+<!--        width="1dp"-->
+<!--        color="@android:color/holo_orange_light"/>-->
+
+<!--</shape>-->
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@android:color/transparent" />
+        <corners android:radius="10dip"/>
+        <stroke
+            android:width="1dip"
+            android:color="#BDC7D8" />
+    </shape>

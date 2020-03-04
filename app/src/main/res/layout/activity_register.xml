@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_edittext">
+
+        <ImageView
+            android:id="@+id/imv"
+            android:layout_width="47dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/user_name_icon" />
+
+        <EditText
+            android:id="@+id/regist_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/imv"
+            android:background="@null"
+            android:hint="昵称" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_edittext">
+
+        <ImageView
+            android:id="@+id/imv_1"
+            android:layout_width="47dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/user_pass_icon" />
+
+        <EditText
+            android:id="@+id/regist_pass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/imv_1"
+            android:background="@null"
+            android:hint="密码"
+            android:inputType="textPassword" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_edittext">
+
+        <ImageView
+            android:id="@+id/imv_2"
+            android:layout_width="47dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/user_sex_icon" />
+
+        <EditText
+            android:id="@+id/regist_sex"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/imv_2"
+            android:background="@null"
+            android:hint="性别"
+            android:inputType="text" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_edittext">
+
+        <ImageView
+            android:id="@+id/imv_3"
+            android:layout_width="47dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/user_phone_icon" />
+
+        <EditText
+            android:id="@+id/regist_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/imv_3"
+            android:background="@null"
+            android:hint="手机"
+            android:inputType="text" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/regist_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="#FFA500"
+        android:text="注册"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="@android:integer/config_mediumAnimTime"
+        android:textSize="28sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+
+            <TextView
+                android:id="@+id/tv_regist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:text=""/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
