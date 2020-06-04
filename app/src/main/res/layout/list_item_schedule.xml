@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/white_boder_square">
+
+    <RelativeLayout
+        android:id="@+id/schedule_container"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_date"/>
+         <TextView
+             android:layout_below="@+id/s_date"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/s_start"/>
+        <TextView
+
+            android:layout_below="@+id/s_start"
+            android:id="@+id/v_id"
+            android:text="影厅号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@+id/s_start"
+            android:id="@+id/s_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/v_id"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_id"
+            android:id="@+id/h_name"/>
+          <TextView
+              android:id="@+id/s_language"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/h_name"/>
+            <LinearLayout
+                android:layout_below="@+id/s_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dis_info"/>
+                <TextView
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dis_price"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/o_price"/>
+            </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

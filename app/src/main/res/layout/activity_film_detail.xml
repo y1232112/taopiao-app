@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/root_film_detail">
+<!--    图片顶部信息-->
+<ScrollView
+    android:paddingTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/film_detail_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/detail_film_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/detail_film_type"
+                    android:layout_below="@+id/detail_film_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/detail_film_actor"
+                    android:layout_below="@+id/detail_film_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/detail_film_date"
+                    android:layout_below="@id/detail_film_actor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+
+                    android:textColor="@android:color/white"
+                    android:id="@+id/detail_film_other"
+                    android:layout_toRightOf="@+id/detail_film_date"
+                    android:layout_below="@+id/detail_film_actor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:text="看过"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/detail_film_date"
+                    android:id="@+id/looked_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_margin="5dp"
+                    android:text="想看"
+                    android:textColor="@android:color/white"
+                    android:layout_toRightOf="@+id/looked_btn"
+                    android:layout_below="@+id/detail_film_date"
+                    android:id="@+id/wish_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <!--   显示想看信息 -->
+        <RelativeLayout
+            android:id="@+id/wrap_wish"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:id="@+id/detail_film_wish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#FFFFFF"
+                android:text="人想看"
+                android:layout_toRightOf="@+id/detail_film_wish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/wrap_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:clickable="true"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:id="@+id/desc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="简介"
+                    android:textColor="#FFFFFF"/>
+                <TextView
+                    android:paddingRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:foregroundGravity="right"
+                    android:id="@+id/desc_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFD"
+                    android:text="展开"/>
+
+                <ImageView
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:id="@+id/ic_ex"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/expand_ic"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <ImageView
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:layout_marginTop="7dp"
+                    android:visibility="gone"
+                    android:background="@drawable/gone"
+                    android:id="@+id/ic_gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:ellipsize="end"
+                    android:minLines="3"
+                    android:maxLines="3"
+                    android:textColor="#FFFFFF"
+                    android:padding="5dp"
+
+                    android:id="@+id/desc_content"
+                    android:layout_below="@+id/desc_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="演职人员"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/detail_get_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="全部>"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:orientation="vertical">
+            <com.example.taopiao.widget.MyHorizontalScrollView
+                android:id="@+id/movie_crew_h_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+                <LinearLayout
+                    android:id="@+id/movie_crew_L_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </com.example.taopiao.widget.MyHorizontalScrollView>
+        </LinearLayout>
+        <RelativeLayout
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light" >
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="讨论"/>
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/to_coment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="参与讨论"/>
+
+            <ListView
+                android:scrollbars="none"
+                android:layout_below="@+id/comment"
+                android:id="@+id/comment_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+</LinearLayout>

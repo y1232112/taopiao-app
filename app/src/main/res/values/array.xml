@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spnner1">
+        <item>全部</item>
+        <item>大地影院</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="spnner2">
+        <item>全城</item>
+
+    </string-array>
+    <string-array name="spnner3">
+        <item>筛选</item>
+
+    </string-array>
+</resources>

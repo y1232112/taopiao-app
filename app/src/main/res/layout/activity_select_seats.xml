@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+      >
+
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:id="@+id/over_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <com.example.taopiao.widget.SeatOverView
+                android:id="@+id/seat_over_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ScrollView
+            android:paddingBottom="50dp"
+            android:layout_below="@+id/over_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.taopiao.widget.SeatRowView
+                        android:id="@+id/seat_row_view"
+                        android:background="#DCDCDC"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+                    <HorizontalScrollView
+                        android:id="@+id/hv_seat"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="horizontal">
+                                            <GridView
+                                                android:id="@+id/seat_grid"
+                                                android:stretchMode="columnWidth"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="500dp"
+                                                android:scrollbars="none" />
+<!--                            <com.example.taopiao.widget.SelectSeatView-->
+<!--                                android:id="@+id/seat_view"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content" />-->
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+        <Button
+
+            android:id="@+id/cummit_film_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/holo_red_light"
+            android:text="提交订单"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

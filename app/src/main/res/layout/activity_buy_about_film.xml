@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@android:color/holo_red_light"/>
+    <RelativeLayout
+        android:paddingVertical="10dp"
+        android:background="@android:color/holo_red_light"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:id="@+id/bg_buy_about_go_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/goback_ic"/>
+        <TextView
+            android:text="再看看"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/background_light" />
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <RelativeLayout
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+           <ImageView
+               android:layout_marginTop="20dp"
+               android:id="@+id/ic_about_film"
+               android:layout_width="80dp"
+               android:layout_height="100dp"/>
+           <TextView
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/ic_about_film"
+               android:id="@+id/film_title_about"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+           <LinearLayout
+
+               android:id="@+id/score_container"
+
+               android:layout_below="@+id/film_title_about"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <RatingBar
+                   android:scrollbarSize="@android:dimen/thumbnail_height"
+                   android:isIndicator="true"
+                   android:backgroundTint="@android:color/white"
+                 android:progressTint="@color/colorPrimaryDark"
+                   android:id="@+id/score_rating_about"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:numStars="5"
+                   android:rating="0.0"
+                   android:stepSize="0.5"/>
+               <TextView
+                   android:textSize="22sp"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:id="@+id/show_score_about"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+           <TextView
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/score_container"
+
+               android:id="@+id/film_score_nums_about"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_marginTop="10dp"
+               android:layout_below="@+id/film_score_nums_about"
+
+               android:id="@+id/film_type_about"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:layout_marginTop="10dp"
+               android:id="@+id/product_length"
+
+               android:layout_below="@+id/film_type_about"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:layout_marginTop="10dp"
+
+               android:layout_below="@+id/product_length"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/date_about_info"/>
+
+             <LinearLayout
+                 android:layout_marginTop="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/container_0000"
+                 android:layout_below="@+id/date_about_info"
+
+                 android:orientation="horizontal">
+                 <TextView
+
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/about_wish_nums"
+                    />
+                 <TextView
+                     android:layout_marginLeft="10dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/about_looked_nums"
+                     />
+             </LinearLayout>
+       </RelativeLayout>
+        <RelativeLayout
+
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/to_schedule_about"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="立即购买"/>
+        </RelativeLayout>
+        <TextView
+
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/brief_info_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

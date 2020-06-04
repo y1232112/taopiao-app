@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home"
+   >
+<RelativeLayout
+    android:paddingTop="22dp"
+    android:background="@android:color/holo_red_light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+
+    android:paddingVertical="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:background="@android:color/holo_red_light"
+  >
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/layout_click_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:paddingLeft="20dp"
+            android:id="@+id/tv_city_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="北京"
+         />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="10dp"
+            android:layout_height="5dp"
+            android:background="@drawable/xiala"/>
+    </LinearLayout>
+
+    <SearchView
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_weight="3"
+         android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:clickable="true"
+
+        android:id="@+id/search_home"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="请输入关键字"
+        android:submitBackground="@null"
+        android:showDividers="none"
+         android:background="@drawable/rounded_corner_search_box"
+        android:queryBackground="@null"
+      />
+   <TextView
+       android:layout_weight="1"
+       android:layout_width="20dp"
+       android:layout_height="20dp"/>
+</LinearLayout>
+</RelativeLayout>
+    <TabHost
+
+      android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TabWidget
+                android:background="#FFFFFF"
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TabWidget>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </TabHost>
+</LinearLayout>

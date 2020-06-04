@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/comment_item">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/c_left"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/comment_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_toRightOf="@+id/c_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:descendantFocusability="afterDescendants">
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:id="@+id/more_option"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"/>
+       <TextView
+           android:layout_below="@+id/more_option"
+           android:textColor="@android:color/black"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/comment_nick"/>
+           <TextView
+
+               android:layout_below="@+id/comment_nick"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/comment_score"/>
+        <TextView
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:minLines="3"
+            android:layout_below="@+id/comment_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_content"/>
+        <TextView
+
+            android:layout_below="@+id/comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment_date"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_zan"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/comment_content"
+            android:layout_toLeftOf="@+id/warp_reply"
+            android:background="@drawable/boder_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:id="@+id/ic_zan"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_zan"/>
+            <TextView
+                android:layout_toRightOf="@id/ic_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment_zan"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/comment_content"
+            android:id="@+id/warp_reply"
+            android:background="@drawable/boder_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_reply"
+                android:background="@drawable/reply"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/ic_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment_reply" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

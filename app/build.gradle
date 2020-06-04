@@ -31,23 +31,26 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     //引入Dagger2以及依赖的一些包，因为用到注释所以还需要引用annotation包
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.0'//指定注解处理器
-    implementation 'com.google.dagger:dagger:2.0'//dagger公用api
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.0'
+    //指定注解处理器
+    implementation 'com.google.dagger:dagger:2.0'
+    //dagger公用api
     implementation 'javax.inject:javax.inject:1'
-    implementation 'javax.annotation:javax.annotation-api:1.2'//添加Android缺失部分Javax注解
+    implementation 'javax.annotation:javax.annotation-api:1.2'
+    //添加Android缺失部分Javax注解
     //Rxjava2
     implementation 'io.reactivex.rxjava2:rxjava:2.0.1'
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
     //okhttp3
     implementation 'com.squareup.okhttp3:okhttp:3.4.1'
-   // implementation 'com.github.javadev:okio:1.6.0'
+    // implementation 'com.github.javadev:okio:1.6.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
     implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
     implementation 'at.stefangeyer.challonge.rest:retrofit:2.0.1'
@@ -57,4 +60,9 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'
     implementation 'com.uber.autodispose:autodispose:0.6.1'
     implementation 'com.uber.autodispose:autodispose-android-archcomponents:0.6.1'
+    implementation files('libs/universal-image-loader-1.8.6-with-sources.jar')
+    implementation 'androidx.palette:palette:1.0.0'
+
+    //二维码
+    implementation 'com.google.zxing:core:3.3.0'
 }

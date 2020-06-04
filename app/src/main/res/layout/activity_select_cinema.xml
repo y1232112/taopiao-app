@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@android:color/holo_red_light"/>
+    <RelativeLayout
+        android:paddingVertical="10dp"
+        android:background="@android:color/holo_red_light"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:id="@+id/bg_cinema_detail_go_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/goback_ic"/>
+        <TextView
+            android:text="最近排有这部影片的影院"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/background_light" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:scrollbars="none"
+            android:id="@+id/list_cinema_select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

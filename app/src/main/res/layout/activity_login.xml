@@ -4,111 +4,145 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="40dp"
+
    >
-
     <RelativeLayout
-        android:background="@drawable/bg_edittext"
-        android:layout_marginTop="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/imv"
-            android:layout_width="47dp"
-            android:layout_height="33dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="2dp"
-            android:background="@drawable/user_name_icon" />
-
-        <EditText
-            android:id="@+id/login_name"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_toRightOf="@id/imv"
-            android:background="@null"
-            android:hint="昵称"/>
-    </RelativeLayout>
-    <RelativeLayout
-        android:background="@drawable/bg_edittext"
-        android:layout_marginTop="25dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/imv_1"
-            android:layout_width="47dp"
-            android:layout_height="33dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="2dp"
-            android:background="@drawable/user_pass_icon" />
-
-        <EditText
-            android:id="@+id/login_pass"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="0dp"
-            android:layout_toRightOf="@id/imv_1"
-            android:background="@null"
-            android:inputType="textPassword"
-            android:hint="密码"
-            />
-
-    </RelativeLayout>
-
-
-    <Button
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:background="#FFA500"
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center_horizontal"
-        android:text="登录"
-        android:textColor="#FFFFFF"
-        android:textSize="28sp"
-        android:textFontWeight="@android:integer/config_mediumAnimTime"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/login_btn"/>
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/bg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/goback_ic"/>
 
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:orientation="horizontal">
-      <CheckBox
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:checked="true"
-          android:text="记住密码"
-          android:textSize="18sp"/>
-      <TextView
-          android:id="@+id/regist_link_view"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="注册用户"
-          android:layout_marginLeft="120dp"
-          android:textSize="18sp"
-          android:textColor="#000000"/>
+        <TextView
 
-  </LinearLayout>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            tools:ignore="ExtraText">
+            android:id="@+id/login_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="返回"
+            android:textColor="@android:color/background_light" />
 
 
-            <TextView
-                android:id="@+id/tv_content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
-        </LinearLayout>
-    </ScrollView>
+    </RelativeLayout>
+   <LinearLayout
+       android:padding="40dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <RelativeLayout
+           android:background="@drawable/bg_edittext"
+           android:layout_marginTop="100dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/imv"
+               android:layout_width="47dp"
+               android:layout_height="33dp"
+               android:layout_marginLeft="2dp"
+               android:layout_marginTop="2dp"
+               android:background="@drawable/user_name_icon" />
+
+           <EditText
+               android:id="@+id/login_name"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_toRightOf="@id/imv"
+               android:background="@null"
+               android:hint="昵称"/>
+       </RelativeLayout>
+       <RelativeLayout
+           android:background="@drawable/bg_edittext"
+           android:layout_marginTop="25dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/imv_1"
+               android:layout_width="47dp"
+               android:layout_height="33dp"
+               android:layout_marginLeft="2dp"
+               android:layout_marginTop="2dp"
+               android:background="@drawable/user_pass_icon" />
+
+           <EditText
+               android:id="@+id/login_pass"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_marginLeft="0dp"
+               android:layout_toRightOf="@id/imv_1"
+               android:background="@null"
+               android:inputType="textPassword"
+               android:hint="密码"
+               />
+
+       </RelativeLayout>
+
+
+       <Button
+           android:background="#FFA500"
+           android:layout_marginTop="40dp"
+           android:layout_gravity="center_horizontal"
+           android:text="登录"
+           android:textColor="#FFFFFF"
+           android:textSize="28sp"
+           android:textFontWeight="@android:integer/config_mediumAnimTime"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/login_btn"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+           <CheckBox
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:text="记住密码"
+               android:textSize="18sp"/>
+           <TextView
+               android:id="@+id/regist_link_view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="注册用户"
+               android:layout_marginLeft="120dp"
+               android:textSize="18sp"
+               android:textColor="#000000"/>
+
+       </LinearLayout>
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               tools:ignore="ExtraText">
+
+
+               <TextView
+                   android:id="@+id/tv_login"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="16sp" />
+           </LinearLayout>
+       </ScrollView>
+   </LinearLayout>
+
 </LinearLayout>
 
 

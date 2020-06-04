@@ -9,6 +9,7 @@ public class BaseEntity<T> {
     private double version;
     private static int SUCCESS_CODE=200;  //成功的code
     private int code;                     //响应码
+    private String token;                 //token
     private String message;               //提示信息
     private T params;                    //返回具体数据
 
@@ -33,6 +34,14 @@ public class BaseEntity<T> {
 
     public int getCode() {
         return code;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public void setCode(int code) {
@@ -60,6 +69,7 @@ public class BaseEntity<T> {
         return "BaseEntity{" +
                 "version=" + version +
                 ", code=" + code +
+                ", token='" + token + '\'' +
                 ", message='" + message + '\'' +
                 ", params=" + params +
                 '}';

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mine"
+  >
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBigImgBg1"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/my_avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/avatar"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:layout_below="@+id/my_avatar"
+            android:id="@+id/my_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+         android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+        <Button
+
+            android:gravity="left"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/border_03"
+            android:id="@+id/mine_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="去登录"
+            android:layout_centerInParent="true"/>
+        <Button
+            android:background="@drawable/border_03"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textSize="15sp"
+
+            android:id="@+id/mine_to_modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="个人资料"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="我的记录"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="15sp"
+
+                android:id="@+id/mine_to_wish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我想看的电影"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:id="@+id/mine_to_looked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我看过的电影"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+   <LinearLayout
+
+       android:padding="20dp"
+       android:background="@drawable/bg_01"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的订单"/>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <RelativeLayout
+
+           android:gravity="center"
+           android:id="@+id/_left"
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageButton
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+
+           android:background="@drawable/ic_dian_ying" />
+       </RelativeLayout>
+       <RelativeLayout
+           android:id="@+id/_right"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ImageButton
+
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_row="0"
+               android:layout_column="5"
+               android:background="@drawable/ic_bao_mi_hua"
+               />
+       </RelativeLayout>
+
+   </LinearLayout>
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <RelativeLayout
+          android:gravity="center"
+          android:layout_weight="1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <TextView
+              android:layout_gravity="center"
+              android:layout_width="50dp"
+              android:layout_height="wrap_content"
+
+              android:gravity="center"
+              android:text="电影票" />
+      </RelativeLayout>
+      <RelativeLayout
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+          <TextView
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+
+              android:text="小食"
+              />
+      </RelativeLayout>
+  </LinearLayout>
+
+
+
+
+
+
+
+
+   </LinearLayout>
+</LinearLayout>

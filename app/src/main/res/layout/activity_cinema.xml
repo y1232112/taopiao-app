@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@android:color/holo_red_light"/>
+    <RelativeLayout
+        android:paddingVertical="10dp"
+       android:background="@android:color/holo_red_light"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+           android:layout_marginTop="7dp"
+            android:id="@+id/bg_cinema_goback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/goback_ic"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+             android:textSize="18sp"
+            android:id="@+id/cinema_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/background_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/a_cinema_container"
+        android:gravity="center_vertical"
+        android:background="@drawable/commen_border"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/cinema_title_01"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@+id/cinema_title_01"
+            android:id="@+id/cinema_address_01"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\>"
+            android:textSize="20dp"
+
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/label_danren"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单人餐"/>
+        <ListView
+
+            android:id="@+id/dan_ren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/label_shuangren"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="双人餐"/>
+        <ListView
+
+            android:id="@+id/shuang_ren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/label_duoren"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多人餐"/>
+        <ListView
+            android:id="@+id/duo_ren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

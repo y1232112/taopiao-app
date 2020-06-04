@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container_root_item_snack">
+
+    <ImageView
+
+        android:id="@+id/ic_snack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+
+        android:id="@+id/snack_title"
+        android:layout_toRightOf="@+id/ic_snack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/snack_discount_price"
+        android:layout_below="@+id/snack_title"
+        android:layout_toRightOf="@+id/ic_snack"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:paddingLeft="5dp"
+
+        android:textColor="#777777"
+       android:layout_alignParentBottom="true"
+        android:id="@+id/snack_origin_price"
+        android:layout_below="@+id/snack_title"
+        android:layout_toRightOf="@+id/snack_discount_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5dp"
+        android:gravity="bottom"
+        android:id="@+id/snack_discount"
+        android:layout_toRightOf="@+id/snack_origin_price"
+        android:layout_below="@+id/snack_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/snack_to_buy"
+        android:background="@drawable/buy_border"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+        android:text="购买"/>
+</RelativeLayout>

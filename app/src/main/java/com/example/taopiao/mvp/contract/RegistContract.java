@@ -6,7 +6,7 @@ import com.example.taopiao.base.BaseView;
 /**
  * 建立契约，契约接口，为mvp建立契约
  */
-public interface registContract {
+public interface RegistContract {
     /**
      * 视图接口,设置内容
      */

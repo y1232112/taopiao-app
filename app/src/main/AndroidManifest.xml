@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:uses-permissionandroid="http://schemas.android.com/apk/distribution"
     package="com.example.taopiao">
 
     <!--允许应用程序改变网络状态-->
@@ -19,14 +20,27 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <!--允许应用程序完全使用网络-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEM"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
 
     <application
+        android:requestLegacyExternalStorage="true"
+        android:name=".application.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_lautcher"
         android:networkSecurityConfig="@xml/net_work_security_config"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
@@ -50,6 +64,70 @@
         <activity android:name=".mvp.activity.RegistActivity">
 
         </activity>
+        <activity android:name=".mvp.activity.CityActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.FilmDetailActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.CommentActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.ReplyActivty"
+            android:configChanges="keyboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+
+            >
+
+        </activity>
+        <activity android:name=".mvp.activity.DoAvatarActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.CinemaActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.CinemaDetailActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.SelectCinemaActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.AfileCinemaSchedule">
+
+        </activity>
+        <activity android:name=".mvp.activity.BuyAboutActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.SelectSeatsActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.FilmOrderActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.MyLookedActivity">
+
+        </activity>
+        <activity android:name=".mvp.activity.MyWishActivity">
+
+        </activity>
+    <activity android:name=".mvp.activity.MyOderFilmActivity">
+
+    </activity>
+        <activity android:name=".mvp.activity.MyOrderSnackActivity">
+
+        </activity>
+          <activity android:name=".mvp.activity.SnackBuyActivity">
+
+          </activity>
+        <activity android:name=".mvp.activity.FilmPayActivity">
+
+        </activity>
+
+        <!-- bmob pay sdk activity begin ,please put below code into application tag -->
+
+
     </application>
 
 </manifest>

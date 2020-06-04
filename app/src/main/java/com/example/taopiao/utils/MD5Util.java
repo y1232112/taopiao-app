@@ -26,15 +26,5 @@ public class MD5Util {
         }
         return henChar.toString();
     }
-    /**
-     * 一次加密两次解密
-     */
-    public static String convertMD5(String string){
-        char[] chars=string.toCharArray();
-        for(int i=0;i<chars.length;i++){
-            chars[i]=(char)(chars[i]^'t');
-        }
-        String value=new String(chars);
-        return value;
-    }
+
 }

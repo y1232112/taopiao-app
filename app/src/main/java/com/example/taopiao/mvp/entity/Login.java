@@ -1,9 +1,18 @@
 package com.example.taopiao.mvp.entity;
 
 public class Login {
+    private Integer id;
     private String loginame;
     private String password;
     private long tocken;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getLoginame() {
         return loginame;
@@ -32,7 +41,8 @@ public class Login {
     @Override
     public String toString() {
         return "Login{" +
-                "loginame='" + loginame + '\'' +
+                "id=" + id +
+                ", loginame='" + loginame + '\'' +
                 ", password='" + password + '\'' +
                 ", tocken=" + tocken +
                 '}';

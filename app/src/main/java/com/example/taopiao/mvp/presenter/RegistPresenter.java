@@ -5,23 +5,26 @@ import android.util.Log;
 import com.example.taopiao.base.BaseEntity;
 import com.example.taopiao.base.BaseObserver;
 import com.example.taopiao.network.retrofit.BaseRequest;
-import com.example.taopiao.mvp.contract.registContract;
-import com.example.taopiao.mvp.entity.Register;
+import com.example.taopiao.mvp.contract.RegistContract;
+
 import org.json.JSONObject;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import okhttp3.RequestBody;
 
 
-public class registPresenter implements registContract.presenter {
+public class RegistPresenter implements RegistContract.presenter {
 
     private Context context;
-    private registContract.view view;
+    private RegistContract.view view;
 
-    public registPresenter(Context context, registContract.view view) {
+    public RegistPresenter(Context context, RegistContract.view view) {
         this.context = context;
         this.view = view;
     }
@@ -51,7 +54,7 @@ public class registPresenter implements registContract.presenter {
         BaseRequest.getInstance().getApiServices().userRegist(requestBody)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new BaseObserver<Map<String,String>>(context){
+                .subscribe( new BaseObserver<Map<String,String>>(context){
 //观察者数据的接收器
                 static final String TAG="--注册--：";
                     @Override

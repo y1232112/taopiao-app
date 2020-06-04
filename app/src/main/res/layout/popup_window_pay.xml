@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:id="@+id/pay_popup"
+    android:background="@drawable/white_boder_square">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_return"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/nopay_return"/>
+    </RelativeLayout>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择支付方式"/>
+<RelativeLayout
+    android:padding="5dp"
+    android:id="@+id/pay_zhifubao"
+    android:background="@drawable/border_commen2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:background="@drawable/ic_zhifubao"
+    android:layout_width="50dp"
+    android:layout_height="50dp"/>
+    <CheckBox
+        android:id="@+id/select_zhifubao"
+        android:clickable="false"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/border_commen2"
+        android:padding="5dp"
+        android:id="@+id/pay_weixin"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/ic_weixin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <CheckBox
+            android:id="@+id/select_weixin"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/border_commen2"
+        android:padding="5dp"
+        android:id="@+id/pay_union"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/ic_union_pay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <CheckBox
+            android:id="@+id/select_union"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>
